@@ -12,13 +12,16 @@ The following instruction describes how to setup wifi for the nanins equipped wi
 5. Unblock wifi from rfkill: `rfkill unblock wifi`
 6. Startup wifi: `ifconfig wlan0 up`. Check if wlan0 is up with `ìfconfig`
 7. Connect via the browser to the myRIO using the IP. Under *Netzwerkeinstellungen* the wlan0 should be available!
-8. Select the connection to the correct network (see instructio below) using a static IP with the following addresses:
+8. Select the connection to the correct network (see instruction below) using a *static IP* with the following addresses:
 
    - IPv4: **172.22.22.2**
    - Subnetmask: **255.255.255.0**
    - Gateway: **172.22.22.1**
 
 9. The myRIO is ready!
+
+
+Help for the myRIO/Wifi-Dongle Setup was found in [this NI-Community forum thread](https://decibel.ni.com/content/thread/31019).
 
 
 ## Instruction: Setup Router
@@ -28,4 +31,5 @@ Setup a router for the Nanins network using the following settings:
 - Network-Name: **nanins-'name'** (e.g. nanins-marlin)
 - Password: **naninsPWD**
 - Router-IP: **172.22.22.1**
+- Subnetmask: **255.255.255.0**
 - IP-Range: **172.22.22.2-xxx**
